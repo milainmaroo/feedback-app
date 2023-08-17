@@ -4,25 +4,25 @@ import PropTypes from 'prop-types'
 import Card from './shared/Card';
 import FeedbackContext from '../context/FeedbackContext';
 
-function FeedbackItem({i}) {
+function FeedbackItem({item}) {
   const { deleteFeedback, editFeedback } = useContext(FeedbackContext)
 
   return (
     <Card>
-        <div className="num-display">{i.rating}</div>
-        <button onClick={() => deleteFeedback(i.id)} className="close">
+        <div className="num-display">{item.rating}</div>
+        <button onClick={() => deleteFeedback(item.id)} className="close">
             <FaTimes color='purple' />
         </button>
-        <button onClick={() => editFeedback(i)} className="edit">
+        <button onClick={() => editFeedback(item)} className="edit">
             <FaEdit color='purple' />
         </button>
-        <div className="text-display">{i.text}</div>
+        <div className="text-display">{item.text}</div>
     </Card>
   )
 }
 
 FeedbackItem.propTypes = {
-    i: PropTypes.object.isRequired,
+    item: PropTypes.object.isRequired,
 
 }
 
