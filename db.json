@@ -1,18 +1,19 @@
 {
   "feedback": [
     {
-      "id": 2
-    },
-    {
-      "id": 3
-    },
-    {
-      "id": 4
-    },
-    {
       "text": "Add new item",
       "rating": 4,
       "id": 5
+    },
+    {
+      "text": "This is a test 2 updating from UI",
+      "rating": 4,
+      "id": 7
+    },
+    {
+      "text": "Add a new item 2",
+      "rating": 7,
+      "id": 8
     }
   ]
 }
